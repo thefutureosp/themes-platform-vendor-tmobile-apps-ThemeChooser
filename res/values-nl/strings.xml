@@ -17,9 +17,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Themakiezer</string>
-    <string name="app_title">Themakiezer</string>
-    <string name="apply">Toepassen</string>
-    <string name="menu_header">Themaopties</string>
+    <string name="menu_apply">Toepassen</string>
     <string name="menu_uninstall">Verwijderen</string>
     <string name="theme_current">%s (huidige)</string>
     <string name="theme_change_dialog_title">Toepassen\u2026</string>

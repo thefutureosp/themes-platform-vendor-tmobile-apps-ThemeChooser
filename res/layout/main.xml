@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  # Copyright (C) 2010, T-Mobile USA, Inc.
+ # This code has been modified.  Portions copyright (C) 2012, ParanoidAndroid Project.
  #
  # Licensed under the Apache License, Version 2.0 (the "License");
  # you may not use this file except in compliance with the License.
@@ -15,61 +16,21 @@
  # limitations under the License.
  -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/chooserheader_marginTop"
-        android:layout_marginBottom="@dimen/chooserheader_marginBottom"
-        android:gravity="center_horizontal"
-        style="@style/ComposedTitle" >
-
-        <TextView
-            style="@style/ChooserText.Title"
-            android:text="@string/app_title" />
-
-        <TextView
-            android:id="@+id/adapter_position"
-            style="@style/ChooserText.Position" />
-
-    </LinearLayout>
+    android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_marginTop="8dp">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
         <Gallery
             android:id="@+id/gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:spacing="2dp"
             android:unselectedAlpha="0.5"
-            />
-
-        <TextView
-            android:id="@+id/theme_name"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_gravity="bottom"
-            android:gravity="center_horizontal"
-            style="@style/ChooserText"
-            />
+            android:spacing="5dp" />
 
     </FrameLayout>
-
-    <Button
-        android:id="@+id/apply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/apply"
-        style="@style/ChooserApply"
-        />
-
-</LinearLayout>
+</RelativeLayout>

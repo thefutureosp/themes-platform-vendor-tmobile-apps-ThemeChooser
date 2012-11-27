@@ -17,11 +17,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Temavælger</string>
-    <string name="app_title">Temavælger</string>
-    <string name="apply">Anvend</string>
-
-    <string name="menu_header">Tema-muligheder</string>
+    <string name="menu_apply">Anvend</string>
     <string name="menu_uninstall">Afinstallér</string>
+
     <string name="theme_current">%s (nuværende)</string>
     <string name="theme_change_dialog_title">Anvender...</string>
     <string name="switching_to_theme">Skifter til <xliff:g id="theme">%s</xliff:g>...</string>
