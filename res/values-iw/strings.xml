@@ -16,8 +16,7 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="apply">החל</string>
-    <string name="menu_header">אפשרויות ערכת נושא</string>
+    <string name="menu_apply">החל</string>
     <string name="menu_uninstall">הסר</string>
     <string name="theme_current">%s (נוכחי)</string>
     <string name="theme_change_dialog_title">מחיל...</string>
@@ -28,5 +27,4 @@
     <string name="dialog_apply_anyway_btn">החל בכל מקרה</string>
     <string name="dialog_bummer_btn">באסה</string>
     <string name="app_name">ערכות נושא</string>
-    <string name="app_title">ערכות נושא</string>
 </resources>

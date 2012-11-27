@@ -17,12 +17,15 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Theme Chooser</string>
-    <string name="app_title">Theme Chooser</string>
-    <string name="apply">Apply</string>
-
-    <string name="menu_header">Theme Options</string>
+    
+    <string name="menu_apply">Apply</string>
     <string name="menu_uninstall">Uninstall</string>
+    <string name="menu_about">About</string>
+
     <string name="theme_current">%s (current)</string>
+    <string name="theme_current_author">Author: </string>
+    <string name="theme_current_name">Name: </string>
+    <string name="theme_current_package">Package: </string>
     <string name="theme_change_dialog_title">Applying...</string>
     <string name="switching_to_theme">Switching to <xliff:g id="theme">%s</xliff:g>...</string>
     <string name="item_count">%1$d/%2$d</string>

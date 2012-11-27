@@ -17,11 +17,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">主题选择器</string>
-    <string name="app_title">主题选择器</string>
-    <string name="apply">应用</string>
 
-    <string name="menu_header">主题选项</string>
+    <string name="menu_apply">应用</string>
     <string name="menu_uninstall">卸载</string>
+
     <string name="theme_current">%s (使用中)</string>
     <string name="theme_change_dialog_title">应用中\u2026</string>
     <string name="switching_to_theme">正在切换至 “<xliff:g id="theme">%s</xliff:g>”\u2026</string>
