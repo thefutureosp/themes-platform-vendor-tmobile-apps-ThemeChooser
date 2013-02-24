@@ -20,10 +20,14 @@
 
     <string name="menu_apply">应用</string>
     <string name="menu_uninstall">卸载</string>
+    <string name="menu_about">关于</string>
 
     <string name="theme_current">%s (使用中)</string>
-    <string name="theme_change_dialog_title">应用中\u2026</string>
-    <string name="switching_to_theme">正在切换至 “<xliff:g id="theme">%s</xliff:g>”\u2026</string>
+    <string name="theme_current_author">作者：</string>
+    <string name="theme_current_name">名称: </string>
+    <string name="theme_current_package">包名: </string>
+    <string name="theme_change_dialog_title">应用中...</string>
+    <string name="switching_to_theme">正在切换至 “<xliff:g id="theme">%s</xliff:g>”...</string>
     <string name="item_count">%1$d／%2$d</string>
 
     <string name="dialog_theme_error_title">主题错误</string>
