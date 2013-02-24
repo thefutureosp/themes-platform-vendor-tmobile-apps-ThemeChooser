@@ -24,8 +24,8 @@
 
     <string name="theme_current">%s (使用中)</string>
     <string name="theme_current_author">作者：</string>
-    <string name="theme_current_name">名称: </string>
-    <string name="theme_current_package">包名: </string>
+    <string name="theme_current_name">名称：</string>
+    <string name="theme_current_package">包名：</string>
     <string name="theme_change_dialog_title">应用中...</string>
     <string name="switching_to_theme">正在切换至 “<xliff:g id="theme">%s</xliff:g>”...</string>
     <string name="item_count">%1$d／%2$d</string>
