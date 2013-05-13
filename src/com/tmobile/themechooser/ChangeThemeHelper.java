@@ -1,5 +1,8 @@
 package com.tmobile.themechooser;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import com.tmobile.themes.ThemeManager;
 import com.tmobile.themes.provider.Themes.ThemeColumns;
 
@@ -7,6 +10,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.app.WallpaperManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +21,11 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.CustomTheme;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemProperties;
+import android.provider.Settings;
 import android.util.Log;
 
 /**
@@ -127,10 +134,33 @@ public class ChangeThemeHelper {
             final ActivityManager am = (ActivityManager)context.getSystemService(Context.ACTIVITY_SERVICE);
             am.forceStopPackage("com.teslacoilsw.launcher");
             am.forceStopPackage("com.cyanogenmod.trebuchet");
-            am.forceStopPackage("com.android.launcher");
+            am.forceStopPackage("com.android.launcher");           
+            if(!SystemProperties.get("persist.sys.themePackageName").isEmpty()){
+            	setWallpaper(context, Uri.parse(Settings.System.getString(
+            		context.getContentResolver(), Settings.System.THEME_WALLPAPER,"android.resource://android/drawable/default_wallpaper")));
+            }
             mHandler.scheduleFinish("Theme change 'complete', closing!");
         }
     };
+    
+    private void setWallpaper(Context context, Uri uri) {
+        InputStream in = null;
+        try {
+           in = context.getContentResolver().openInputStream(uri);
+           WallpaperManager.getInstance(context).setStream(in);
+        } catch (Exception e) {
+            Log.w("THEME", "Could not set wallpaper", e);
+        } finally {
+            if (in != null) {
+                try {
+					in.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            }
+        }
+    }
 
     private class ChangeHandler extends Handler {
         private static final int MSG_FINISH_SCHEDULE = 0;

@@ -16,6 +16,11 @@
  -->
 
 <resources>
+    <dimen name="chooserheader_marginTop">10dp</dimen>
+    <dimen name="chooserheader_marginBottom">12dp</dimen>
+
+    <dimen name="choosertext_marginTop">162dp</dimen>
+
     <dimen name="preview_height_size">198dp</dimen>
-    <dimen name="preview_width_size">330dp</dimen>
+    <dimen name="preview_width_size">400dp</dimen>
 </resources>

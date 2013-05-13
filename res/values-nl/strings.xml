@@ -14,17 +14,26 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Themakiezer</string>
-    <string name="menu_apply">Toepassen</string>
+    <string name="app_title">Themakiezer</string>
+    <string name="apply">Toepassen</string>
+
+    <string name="menu_header">Themaopties</string>
     <string name="menu_uninstall">Verwijderen</string>
     <string name="theme_current">%s (huidige)</string>
-    <string name="theme_change_dialog_title">Toepassen\u2026</string>
-    <string name="switching_to_theme">Veranderen naar <xliff:g id="theme">%s</xliff:g>\u2026</string>
+    <string name="theme_current_author">Maker: </string>
+    <string name="theme_current_name">Naam: </string>
+    <string name="theme_current_package">Pakket: </string>
+    <string name="theme_change_dialog_title">Toepassen&#8230;</string>
+    <string name="switching_to_theme">Veranderen naar <xliff:g id="theme">%s</xliff:g>&#8230;</string>
+    <string name="item_count">%1$d/%2$d</string>
+
     <string name="dialog_theme_error_title">Themafout</string>
-    <string name="dialog_missing_host_density_msg">Dit thema mist bestanden voor de schermgrootte van uw apparaat.</string>
-    <string name="dialog_missing_theme_package_scope_msg">Dit thema is onjuist gecompileerd en kan niet worden toegepast. Meld dit a.u.b. aan de maker van dit thema.</string>
+    <string name="dialog_missing_host_density_msg">Dit thema mist bestanden voor de schermgrootte van uw apparaat</string>
+    <string name="dialog_missing_theme_package_scope_msg">Dit thema is onjuist gecompileerd en kan niet worden toegepast. Meld dit a.u.b. aan de maker van dit thema</string>
     <string name="dialog_apply_anyway_btn">Toch toepassen</string>
     <string name="dialog_bummer_btn">Annuleren</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- # Copyright (C) 2010, T-Mobile USA, Inc.
+ # Copyright (C) 2011, T-Mobile USA, Inc.
  #
  # Licensed under the Apache License, Version 2.0 (the "License");
  # you may not use this file except in compliance with the License.
@@ -13,15 +13,13 @@
  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  # See the License for the specific language governing permissions and
  # limitations under the License.
--->
+ -->
 
-
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/theme_preview"
-    android:layout_gravity="center"
-    android:layout_width="@dimen/preview_width_size"
-    android:layout_height="@dimen/preview_height_size"
-    android:paddingTop="20dp"
-    android:adjustViewBounds="true"
-    android:scaleType="fitXY" />
-
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <gradient android:type="radial"
+        android:startColor="@color/chooser_bg_color"
+        android:endColor="@color/chooser_bg_end_color"
+        android:gradientRadius="350"
+        android:centerX="0.5"
+        android:centerY="0.45"/>
+</shape>
