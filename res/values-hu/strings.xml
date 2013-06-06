@@ -24,6 +24,9 @@
     <string name="menu_header">Téma beállításai</string>
     <string name="menu_uninstall">Eltávolítás</string>
     <string name="theme_current">%s (jelenlegi)</string>
+    <string name="theme_current_author">Szerző: </string>
+    <string name="theme_current_name">Név: </string>
+    <string name="theme_current_package">Csomag: </string>
     <string name="theme_change_dialog_title">Alkalmazás&#8230;</string>
     <string name="switching_to_theme">Váltás %s témára&#8230;</string>
     <string name="item_count" formatted="false">%1$d/%2$d</string>
@@ -33,4 +36,5 @@
     <string name="dialog_missing_theme_package_scope_msg">Ez a téma nem megfelelően összeállított, és nem alkalmazható. Kérjük, jelentse az esetet a téma szerzőjének.</string>
     <string name="dialog_apply_anyway_btn">Alkalmazás</string>
     <string name="dialog_bummer_btn">Mégse</string>
+    <string name="uninstall">Eltávolítás</string>
 </resources>
